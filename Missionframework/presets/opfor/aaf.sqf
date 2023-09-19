@@ -3,7 +3,8 @@
     - None
 
     Optional Mods:
-    - None
+    - DDX_A3, DMOrchard's DLC Crossover mod, Armaverse 2035
+    - DCX_WS, DMOrchard's cDLC Crossover mod, Western Sahara
 */
 
 // Enemy infantry classes
@@ -26,9 +27,9 @@ opfor_engineer = "I_engineer_F";                                        // Engin
 opfor_paratrooper = "B_soldier_PG_F";                                   // Paratrooper
 
 // Enemy vehicles used by secondary objectives.
-opfor_mrap = "I_MRAP_03_F";                                             // M-ATV
-opfor_mrap_armed = "I_MRAP_03_hmg_F";                                   // MATV (HMG)
-opfor_transport_helo = "I_Heli_Transport_02_F";                         // Merlin
+opfor_mrap = "I_MRAP_03_F";                                             // Strider
+opfor_mrap_armed = "I_MRAP_03_hmg_F";                                   // Strider (HMG)
+opfor_transport_helo = "I_Heli_Transport_02_F";                         // CH-49 Mohawk
 opfor_transport_truck = "I_Truck_02_covered_F";                         // Kamaz Transport (Covered)
 opfor_ammobox_transport = "I_Truck_02_transport_F";                     // Kamaz Transport (Open) -> Has to be able to transport resource crates!
 opfor_fuel_truck = "I_Truck_02_fuel_F";                                 // Kamaz Fuel
@@ -56,86 +57,94 @@ militia_squad = [
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "B_LSV_01_armed_F",                                                 // Polaris DAGOR (XM312)
-    "B_LSV_01_armed_F",                                                 // Polaris DAGOR (XM312)
-    "I_MRAP_03_hmg_F",                                                  // MATV (HMG)
-    "I_APC_Wheeled_03_cannon_F",                                        // SPz Pandur
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_AT_F"                                                      // Wiesel ATGM
+    "ddx_aaf_prowler_hmg",                                              // Prowler (HMG)
+    "ddx_aaf_prowler_hmg",                                              // Prowler (HMG)
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "I_APC_Wheeled_03_cannon_F",                                        // AFV-4 Gorgon
+    "dcx_marid_aaf_hmg",                                                // MSE-3 Marid (HMG)
+    "ddx_aaf_marid_rcws",                                               // MSE-3 Marid (RCWS)
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_LT_01_AT_F"                                                      // AWC 302 Nyx (AT)
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
-    "I_MRAP_03_hmg_F",                                                  // M-ATV (HMG)
-    "I_MRAP_03_hmg_F",                                                  // M-ATV (HMG)
-    "I_MRAP_03_gmg_F",                                                  // M-ATV (GMG)
-    "B_LSV_01_AT_F",                                                    // Polaris (Mini-Spike PZAbw)
-    "I_APC_Wheeled_03_cannon_F",                                        // SPz Pandur
-    "I_APC_Wheeled_03_cannon_F",                                        // SPz Pandur
-    "I_APC_tracked_03_cannon_F",                                        // Warrior
-    "I_APC_tracked_03_cannon_F",                                        // Warrior
-    "I_LT_01_AA_F",                                                     // Wiesel AA
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "I_MBT_03_cannon_F",                                                // Leopard
-    "I_MBT_03_cannon_F",                                                // Leopard
-    "B_AFV_Wheeled_01_up_cannon_F",                                     // Rooikat 120 UP
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_AT_F"                                                      // Wiesel ATGM
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "I_MRAP_03_gmg_F",                                                  // Strider (GMG)
+    "ddx_aaf_prowler_at",                                               // Prowler (AT)
+    "dcx_marid_aaf_hmg",                                                // MSE-3 Marid (HMG)
+    "ddx_aaf_marid_rcws",                                               // MSE-3 Marid (RCWS)
+    "I_APC_Wheeled_03_cannon_F",                                        // AFV-4 Gorgon
+    "I_APC_Wheeled_03_cannon_F",                                        // AFV-4 Gorgon
+    "I_APC_tracked_03_cannon_F",                                        // FV-720 Mora
+    "I_APC_tracked_03_cannon_F",                                        // FV-720 Mora
+    "I_LT_01_AA_F",                                                     // AWC 302 Nyx (AA)
+    "I_MBT_03_cannon_F",                                                // MBT-52 Kuma
+    "I_MBT_03_cannon_F",                                                // MBT-52 Kuma
+    "I_A_Truck_02_aa_IxWS",                                             // Zamak (Zu-23-2)
+    "I_A_Truck_02_aa_IxWS",                                             // Zamak (Zu-23-2)
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_LT_01_AT_F"                                                      // AWC 302 Nyx (AT)
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
-    "I_MRAP_03_hmg_F",                                                  // M-ATV (HMG)
-    "I_MRAP_03_hmg_F",                                                  // M-ATV (HMG)
-    "B_LSV_01_AT_F",                                                    // Polaris DAGOR (Mini-Spike PZAbw)
-    "I_APC_Wheeled_03_cannon_F",                                        // SPz Pandur
-    "I_APC_tracked_03_cannon_F",                                        // Warrior
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_AT_F"                                                      // Wiesel ATGM
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "ddx_aaf_prowler_hmg",                                              // Prowler (HMG)
+    "ddx_aaf_prowler_at",                                               // Prowler (AT)
+    "dcx_marid_aaf_hmg",                                                // MSE-3 Marid (HMG)
+    "ddx_aaf_marid_rcws",                                               // MSE-3 Marid (RCWS)
+    "I_APC_Wheeled_03_cannon_F",                                        // AFV-4 Gorgon
+    "I_APC_tracked_03_cannon_F",                                        // FV-720 Mora
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_A_Truck_02_aa_IxWS",                                             // Zamak (Zu-23-2)
+    "I_LT_01_AT_F"                                                      // AWC 302 Nyx (AT)
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
-    "I_MRAP_03_hmg_F",                                                  // M-ATV (HMG)
-    "I_MRAP_03_gmg_F",                                                  // M-ATV (GMG)
-    "I_MRAP_03_gmg_F",                                                  // M-ATV (GMG)
-    "B_LSV_01_AT_F",                                                    // Polaris DAGOR (Mini-Spike PZAbw)
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "I_MRAP_03_gmg_F",                                                  // Strider (GMG)
+    "I_MRAP_03_gmg_F",                                                  // Strider (GMG)
+    "ddx_aaf_prowler_hmg",                                              // Prowler (HMG)
+    "ddx_aaf_prowler_at",                                               // Prowler (AT)
+    "dcx_marid_aaf_hmg",                                                // MSE-3 Marid (HMG)
+    "ddx_aaf_marid_rcws",                                               // MSE-3 Marid (RCWS)
     "I_Truck_02_transport_F",                                           // Kamaz Transport
     "I_Truck_02_covered_F",                                             // Kamaz Transport (Covered)
-    "I_APC_tracked_03_cannon_F",                                        // Warrior
-    "I_APC_tracked_03_cannon_F",                                        // Warrior
-    "I_LT_01_AA_F",                                                     // Wiesel AA
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "I_MBT_03_cannon_F",                                                // Leopard
-    "I_MBT_03_cannon_F",                                                // Leopard
-    "I_MBT_03_cannon_F",                                                // Leopard
-    "B_MBT_01_TUSK_F",                                                  // Merkava Mk IV LIC
+    "I_APC_tracked_03_cannon_F",                                        // FV-720 Mora
+    "I_APC_tracked_03_cannon_F",                                        // FV-720 Mora
+    "I_LT_01_AA_F",                                                     // AWC 302 Nyx (AA)
+    "I_MBT_03_cannon_F",                                                // MBT-52 Kuma
+    "I_MBT_03_cannon_F",                                                // MBT-52 Kuma
+    "I_MBT_03_cannon_F",                                                // MBT-52 Kuma
     "I_Heli_light_03_dynamicLoadout_F",                                 // Wildcat (Armed)
     "I_Heli_light_03_dynamicLoadout_F",                                 // Wildcat (Armed)
-    "I_Heli_Transport_02_F",                                            // Merlin
-    "B_Heli_Attack_01_dynamicLoadout_F",                                // RAH-66 Comanche
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_AT_F"                                                      // Wiesel ATGM
+    "I_Heli_Transport_02_F",                                            // CH-49 Mohawk
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_A_Truck_02_aa_IxWS",                                             // Zamak (Zu-23-2)
+    "I_LT_01_AT_F"                                                      // AWC 302 Nyx (AT)
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-    "I_MRAP_03_hmg_F",                                                  // M-ATV (HMG)
-    "I_MRAP_03_hmg_F",                                                  // M-ATV (HMG)
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_cannon_F",                                                 // Wiesel MK20
-    "I_LT_01_AT_F",                                                     // Wiesel ATGM
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "I_MRAP_03_hmg_F",                                                  // Strider (HMG)
+    "dcx_marid_aaf_hmg",                                                // MSE-3 Marid (HMG)
+    "ddx_aaf_marid_rcws",                                               // MSE-3 Marid (RCWS)
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_LT_01_cannon_F",                                                 // AWC 302 Nyx (Cannon)
+    "I_LT_01_AT_F",                                                     // AWC 302 Nyx (AT)
     "I_Truck_02_transport_F",                                           // Kamaz Transport
-    "I_APC_Wheeled_03_cannon_F",                                        // SPz Pandur
-    "I_APC_tracked_03_cannon_F",                                        // Warrior
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "I_LT_01_AA_F",                                                     // Wiesel AA
-    "B_CTRG_Heli_Transport_01_sand_F",                                  // UH-80 Ghost Hawk (Sand)
-    "I_Heli_Transport_02_F"
+    "I_APC_Wheeled_03_cannon_F",                                        // AFV-4 Gorgon
+    "I_APC_tracked_03_cannon_F",                                        // FV-720 Mora
+    "I_A_Truck_02_aa_IxWS",                                             // Zamak (Zu-23-2)
+    "I_LT_01_AA_F",                                                     // AWC 302 Nyx (AA)
+    "I_Heli_Transport_02_F"						// CH-49 Mohawk
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
@@ -143,24 +152,23 @@ If something in this array can't hold all 8 soldiers then buggy behaviours may o
 opfor_troup_transports = [
     "I_Truck_02_transport_F",                                           // Kamaz Transport
     "I_Truck_02_covered_F",                                             // Kamaz Transport (Covered)
-    "I_APC_Wheeled_03_cannon_F",                                        // SPz Pandur
-    "B_CTRG_Heli_Transport_01_sand_F",                                  // UH-80 Ghost Hawk (sand)
-    "I_Heli_Transport_02_F"                                             // Merlin
+    "I_APC_Wheeled_03_cannon_F",                                        // AFV-4 Gorgon
+    "ddx_aaf_orca",                                                     // P0-30 Orca (Unarmed)
+    "dcx_aaf_orca_up",                                                  // P0-30 Orca (UP, Unarmed)
+    "I_Heli_Transport_02_F"                                             // CH-49 Mohawk
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
     "I_Heli_light_03_dynamicLoadout_F",                                 // Wildcat (Armed)
-    "B_CTRG_Heli_Transport_01_sand_F",                                  // UH-80 Ghost Hawk (Sand)
-    "B_Heli_Attack_01_dynamicLoadout_F",                                // RAH-66 Comanche
-    "B_Heli_Transport_01_F",                                            // UH-80 Ghost Hawk
-    "I_Heli_Transport_02_F",                                            // Merlin
-    "B_Heli_Transport_03_unarmed_F"                                     // CH-47l Chinook (unarmed)
-];
+    "I_Heli_Transport_02_F",                                            // CH-49 Mohawk
+    "ddx_aaf_orca_armed",                                               // P0-30 Orca (Armed)
+    "dcx_aaf_orca_up_armed"                         			// P0-30 Orca (UP, Armed)
+]; 
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-    "B_Plane_CAS_01_dynamicLoadout_F",                                  // A-10D Thunderbolt II (CAS)
-    "I_Plane_Fighter_03_dynamicLoadout_F",                              // L-159
-    "I_Plane_Fighter_04_F"                                              // Gripen
+    "ddx_aaf_fa181",		                                        // F/A-181 Black Wasp II
+    "I_Plane_Fighter_03_dynamicLoadout_F",                              // A-143 Buzzard
+    "I_Plane_Fighter_04_F"                                              // A-149 Gryphon
 ];
