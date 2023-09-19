@@ -12,13 +12,29 @@
 GRLIB_arsenal_weapons = [
     // Primary
     "hgun_PDW2000_F",                                               // PDW2000 9 mm
+    "arifle_Mk20_plain_F",                                          // Mk20 5.56 mm (Plain)
     "arifle_Mk20_F",                                                // Mk20 5.56 mm (Camo)
+    "arifle_Mk20_GL_plain_F",                                       // Mk20 EGLM 5.56 mm (Camo)
     "arifle_Mk20_GL_F",                                             // Mk20 EGLM 5.56 mm (Camo)
+    "arifle_Mk20C_plain_F",                                         // Mk20C 5.56 mm (Plain)
     "arifle_Mk20C_F",                                               // Mk20C 5.56 mm (Camo)
+    "arifle_SDAR_F",                                                // SDAR 5.56 mm 
+    "arifle_SPAR_01_blk_F",                                         // SPAR-16 5.56 mm (Black)
+    "arifle_SPAR_01_khk_F",                                         // SPAR-16 5.56 mm (Khaki)
+    "arifle_SPAR_01_snd_F",                                         // SPAR-16 5.56 mm (Sand)
+    "arifle_SPAR_01_GL_blk_F",                                      // SPAR-16 GL 5.56 mm (Black)
+    "arifle_SPAR_01_GL_khk_F",                                      // SPAR-16 GL 5.56 mm (Khaki)
+    "arifle_SPAR_01_GL_snd_F",                                      // SPAR-16 GL 5.56 mm (Sand)
     "srifle_GM6_F",                                                 // GM6 Lynx 12.7 mm
+    "srifle_GM6_camo_F",                                            // GM6 Lynx 12.7 mm (Camo)
     "srifle_EBR_F",                                                 // Mk18 ABR 7.62 mm
+    "srifle_DMR_06_hunter_F",                                       // Mk14 7.62 mm (Classic)
+    "srifle_DMR_06_camo_F",                                         // Mk14 7.62 mm (Camo)
+    "srifle_DMR_06_olive_F",                                        // Mk14 7.62 mm (Olive)
     "arifle_SDAR_F",                                                // SDAR 5.56 mm
     "LMG_Mk200_F",                                                  // Mk200 6.5 mm
+    "LMG_Mk200_black_F",                                            // Mk200 6.5 mm (Black)
+    "LMG_03_F",                                                     // LIM-85 5.56 mm
     
     // Handgun
     "hgun_ACPC2_F",                                                 // ACP-C2 .45 ACP
@@ -116,6 +132,7 @@ GRLIB_arsenal_items = [
     "optic_MRCO",                                                   // MRCO
     "optic_LRPS",                                                   // LRPS
     "optic_sos",                                                    // MOS
+    "optic_DMS",                                                    // DMS
     "bipod_03_F_blk",                                               // Bipod (Black) [AAF]
     "bipod_03_F_oli",                                               // Bipod (Olive) [AAF]
     "muzzle_snds_m",                                                // Sound Suppressor (5.56 mm)
