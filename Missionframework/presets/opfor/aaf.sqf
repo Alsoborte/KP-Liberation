@@ -144,7 +144,7 @@ opfor_battlegroup_vehicles_low_intensity = [
     "I_APC_tracked_03_cannon_F",                                        // FV-720 Mora
     "I_A_Truck_02_aa_IxWS",                                             // Zamak (Zu-23-2)
     "I_LT_01_AA_F",                                                     // AWC 302 Nyx (AA)
-    "I_Heli_Transport_02_F"						// CH-49 Mohawk
+    "I_Heli_Transport_02_F"					                        	// CH-49 Mohawk
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
@@ -163,12 +163,12 @@ opfor_choppers = [
     "I_Heli_light_03_dynamicLoadout_F",                                 // Wildcat (Armed)
     "I_Heli_Transport_02_F",                                            // CH-49 Mohawk
     "ddx_aaf_orca_armed",                                               // P0-30 Orca (Armed)
-    "dcx_aaf_orca_up_armed"                         			// P0-30 Orca (UP, Armed)
+    "dcx_aaf_orca_up_armed"                         		        	// P0-30 Orca (UP, Armed)
 ]; 
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-    "ddx_aaf_fa181",		                                        // F/A-181 Black Wasp II
+    "ddx_aaf_fa181",		                                            // F/A-181 Black Wasp II
     "I_Plane_Fighter_03_dynamicLoadout_F",                              // A-143 Buzzard
     "I_Plane_Fighter_04_F"                                              // A-149 Gryphon
 ];
