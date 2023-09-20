@@ -39,7 +39,7 @@ switch (KP_liberation_preset_blufor) do {
     case 28: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\sfp_wdl.sqf";};
     case 29: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\sfp_des.sqf";};
     case 30: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\enoch.sqf";};
-    case 31: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\AAF.sqf";};
+    case 31: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\aaf_crossover.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
