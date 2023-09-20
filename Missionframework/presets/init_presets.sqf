@@ -49,7 +49,7 @@ switch (KP_liberation_preset_opfor) do {
     case  3: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\takistan.sqf";};
     case  4: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\islamic_state.sqf";};
     case  5: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\SLA.sqf";};
-    case  6: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\aaf.sqf";};
+    case  6: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\aaf_crossover.sqf";};
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\nato.sqf";};
     case  8: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_west.sqf";};
     case  9: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_west_win.sqf";};
