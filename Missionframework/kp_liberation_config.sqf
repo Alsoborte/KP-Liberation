@@ -108,7 +108,8 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 27 = CUP Takistani Army
 28 = SFP (Woodland)
 29 = SFP (Desert)
-30 = LDF (Contact DLC) */
+30 = LDF (Contact DLC)
+31 = AAF (DMX Crossover mod) */
 KP_liberation_preset_blufor = 0;
 
 /* OPFOR preset:
@@ -118,7 +119,7 @@ KP_liberation_preset_blufor = 0;
 3  = Project OPFOR (Takistan)
 4  = Project OPFOR (Islamic State)
 5  = Project OPFOR (Sahrani)
-6  = AAF
+6  = AAF (DMX Crossover mod)
 7  = NATO
 8  = Germany West (Global Mobilization)
 9  = Germany West Winter (Global Mobilization)
@@ -174,7 +175,7 @@ KP_liberation_preset_civilians = 0;
 12 = NATO Woodland arsenal preset
 13 = CSAT Hex arsenal preset
 14 = CSAT Green Hex arsenal preset
-15 = AAF arsenal preset
+15 = AAF arsenal preset (DMX Crossover mod)
 16 = LDF arsenal preset */
 KP_liberation_arsenal = 0;
 
